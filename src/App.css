@@ -1,38 +1,287 @@
+
+/* Reset para evitar overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Base */
 .App {
-  text-align: center;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: white;
+  min-height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: #252B46;
+  border: 2px solid red;
+  margin: 1rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Navigation */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #252B46;
+  font-weight: bold;
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+  white-space: nowrap;
+}
+
+/* Components */
+.Button {
+   font-size: 0.8rem;
+  padding: 0.6rem 1.8rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #5368df;
   color: white;
+  border: 2px solid #5368df;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+.Button:hover {
+  background: #fff;
+  color: #5368df;
+  border-color: #5368df;
+}
+.img2 {
+  max-width: 50%;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.App-link {
-  color: #61dafb;
+.ddCards {
+  border: 2px solid blue;
+  background: aqua;
+  width: 90%;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-hero {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: #252B46;
+  border: 2px solid red;
+  margin: 1rem;
+  padding: 1rem;
+  width: calc(100% - 2rem);
+  box-sizing: border-box;
+}
+
+.App-dd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Tablet+ */
+@media (min-width: 768px) {
+  .App-header {
+    flex-direction: row;
+    padding: 1.5rem;
+    min-height: 100px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .nav-links ul {
+    gap: 1rem;
+    justify-content: flex-end;
   }
+  
+  .App-hero {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .App-dd {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .ddCards {
+    width: 45%;
+    min-width: 250px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .App-header { padding: 2rem; }
+  .ddCards { width: 30%; }
+}
+
+/* faq */
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  min-height: 22.5rem;
+}
+
+.faq h6 {
+  font-size: 1.87rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.faq p {
+  font-size: 0.9rem;
+  color: rgba(37, 43, 70, 0.714);
+}
+
+.faq ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.faq-question:hover {
+  color: #5368df;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  font-size: 0.9rem;
+  color: rgba(37, 43, 70, 0.714);
+}
+
+.faq li.open .faq-answer {
+  max-height: 200px;
+  padding-top: 1rem;
+}
+
+.toggle-faq {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #5368df;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.toggle-faq:hover {
+  color: #fa5757;
+  transform: scale(1.1);
+}
+
+.faq li.open .toggle-faq {
+  transform: rotate(45deg);
+}
+
+/* Newsletter Footer Styles */
+.newsletter-footer {
+  background: #5368df;
+  padding: 60px 20px 120px;
+  text-align: center;
+}
+
+/* Email Signup Component Styles */
+.email-signup {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.subtext {
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  color: #d0d0ff;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.email-input {
+  padding: 12px 15px;
+  width: 280px;
+  max-width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-button {
+  padding: 12px 24px;
+  background: #fa5757;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #c94444;
 }

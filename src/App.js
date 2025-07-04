@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+
+import Header from "./components/organisms/Header1";
+import Hero from "./components/organisms/Hero";
+import Features from "./components/organisms/Features";
+import "./App.css";
+import "./index.css";
+import Footer from "./components/organisms/Footer";
+import Download from "./components/organisms/Downloads";
+import Prefooter from "./components/organisms/Prefooter";
+import Faq from "./components/organisms/Faq";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Hero />
+      <Features />
+      <Download />
+      <Faq />
+      <Prefooter />
+      <Footer />
+      {/* Aquí pots afegir Hero, Features, Footer... */}
     </div>
   );
 }
