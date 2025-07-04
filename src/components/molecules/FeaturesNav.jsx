@@ -1,14 +1,20 @@
-import Button from "../atoms/Button1";
+function FeaturesNav({ activeTab, setActiveTab }) {
+  const tabs = ["Simple Bookmarking", "Speedy Searching", "Easy Sharing"];
 
-function FeaturesNav() {
   return (
-    <nav className="nav-links">
-      <ul>
-        <li><Button>Simple Bookmarking</Button></li>
-        <li><Button>Speedy Searching</Button></li>
-        <li><Button>Easy Sharing</Button></li>
-      </ul>
-    </nav>
+    <div className="tabs-container">
+      <div className="tabs">
+        {tabs.map((tab, index) => (
+          <button
+            key={index}
+            className={`tab-button ${activeTab === index ? 'active' : ''}`}
+            onClick={() => setActiveTab(index)}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
+    </div>
   );
 }
 

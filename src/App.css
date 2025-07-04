@@ -89,6 +89,125 @@ html, body {
   width: calc(100% - 2rem);
   box-sizing: border-box;
 }
+/* Features Section */
+.features-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 7rem auto 0;
+}
+
+.features-header {
+  max-width: 500px;
+  margin: 0 auto 3rem;
+}
+
+.features-header h2 {
+  font-size: 1.87rem;
+  color: #252b46;
+  margin-bottom: 1rem;
+}
+
+.features-header p {
+  font-size: 0.85rem;
+  color: rgba(37, 43, 70, 0.714);
+  line-height: 1.5;
+}
+
+/* Tabs */
+.tabs-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(37, 43, 70, 0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 20px 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgba(37, 43, 70, 0.7);
+  border-bottom: 4px solid transparent;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.tab-button:hover {
+  color: #252b46;
+}
+
+.tab-button.active {
+  color: #252b46;
+  border-bottom: 4px solid #fa5757;
+}
+
+/* Tab Content */
+.tab-content {
+  padding: 4rem 0;
+}
+
+.tab-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tab-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.tab-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.tab-text h3 {
+  font-size: 1.5rem;
+  color: #252b46;
+  margin-bottom: 1rem;
+}
+
+.tab-text p {
+  font-size: 0.85rem;
+  color: rgba(37, 43, 70, 0.714);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.simple-button {
+  font-size: 0.8rem;
+  padding: 0.6rem 1.8rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #5368df;
+  color: white;
+  border: 2px solid #5368df;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.simple-button:hover {
+  background: #fff;
+  color: #5368df;
+  border-color: #5368df;
+}
 /* Contenedor principal */
 .download {
   padding: 4rem 2rem;
