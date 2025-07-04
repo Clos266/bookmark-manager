@@ -1,11 +1,11 @@
-
 import Button from "../atoms/Button1";
 
-function DownloadCard({ image, title, version, buttonText }) {
+function DownloadCard({ image, title, version, buttonText, cardId }) {
   return (
-    <div className="ddCards">
+    <div className={`download-card ${cardId || ""}`}>
       <div className="card-image">{image}</div>
-      <h2 className="card-title">{title}</h2>
+      <h3 className="card-title">{title}</h3>
+      <div className="card-divider"></div>
       <p className="card-version">Minimum version {version}</p>
       <div className="card-button">
         <Button>{buttonText}</Button>

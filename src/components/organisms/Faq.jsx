@@ -86,7 +86,7 @@ function Faq() {
           </li>
         ))}
       </ul>
-      <Button>more info</Button>
+      <Button>More Info</Button>
     </section>
   );
 }
