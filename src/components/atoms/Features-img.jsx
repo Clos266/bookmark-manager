@@ -1,7 +1,5 @@
-import features from "../../assets/images/img-features.svg";
-
-function FeaturesImg() {
-  return <img src={features} alt="features" className="img2" />;
+function FeaturesImg({ src, alt = "features", className = "img2" }) {
+  return <img src={src} alt={alt} className={className} />;
 }
 
 export default FeaturesImg;
