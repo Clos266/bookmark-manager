@@ -77,17 +77,61 @@ html, body {
 }
 
 
-.App-hero {
+/* Hero */
+.hero {
+  padding: 2rem 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.hero-container {
   display: flex;
-  flex-direction: column;
-  background: white;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  color: #252B46;
-  border: 2px solid red;
-  margin: 1rem;
-  padding: 1rem;
-  width: calc(100% - 2rem);
-  box-sizing: border-box;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-content {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+  }
+  
+  .hero-content {
+    order: 2;
+    text-align: center;
+  }
+  
+  .hero-image {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 /* Features Section */
 .features-section {
