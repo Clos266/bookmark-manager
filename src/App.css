@@ -217,7 +217,7 @@ html, body {
   flex: 1;
   min-width: 300px;
   max-width: 500px;
-  text-align: left;
+  text-align: center;
   padding: 0 1rem;
 }
 
@@ -232,6 +232,7 @@ html, body {
   color: rgba(37, 43, 70, 0.714);
   line-height: 1.5;
   margin-bottom: 1.5rem;
+  
 }
 
 .simple-button {
