@@ -1,5 +1,8 @@
-function FeaturesImg({ src, alt = "features", className = "img2" }) {
-  return <img src={src} alt={alt} className={className} />;
+import features from "../../assets/images/img-features.svg";
+// import easy from "../../assets/images/img-easysharing.svg";
+// import speedy from "../../assets/images/img-speedy.svg";
+function FeaturesImg() {
+  return <img src={features} alt="features" className="img2" />;
 }
 
 export default FeaturesImg;

@@ -1,5 +1,7 @@
 import FeaturesImg from "../atoms/Features-img";
+
 import Button from "../atoms/Button1";
+// import PropTypes from 'prop-types';
 
 function FeaturesCard({ 
   imageSrc, 
@@ -26,5 +28,14 @@ function FeaturesCard({
     </div>
   );
 }
+
+// FeaturesCard.propTypes = {
+//   imageSrc: PropTypes.string.isRequired,
+//   imageAlt: PropTypes.string,
+//   title: PropTypes.string.isRequired,
+//   description: PropTypes.string.isRequired,
+//   buttonText: PropTypes.string,
+//   isActive: PropTypes.bool
+// };
 
 export default FeaturesCard;
