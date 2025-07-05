@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import FeaturesNav from "../molecules/FeaturesNav";
 import FeaturesImg from "../atoms/Features-img";
-
+import EasyImg from '../atoms/Easy-img';
+import Speedy from '../atoms/Speedy-img';
 function Features() {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -15,14 +16,14 @@ function Features() {
     },
     {
       title: "Speedy Searching",
-      image: <FeaturesImg />,
+      image: <Speedy />,
       heading: "Intelligent search",
       description: "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
       buttonText: "More Info"
     },
     {
       title: "Easy Sharing",
-      image: <FeaturesImg />,
+      image: <EasyImg />,
       heading: "Share your bookmarks",
       description: "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
       buttonText: "More Info"
