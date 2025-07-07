@@ -6,17 +6,17 @@ import OperaImg from "../atoms/Opera-img";
 function Download() {
   const browsers = [
     {
-      id: "firefox",
-      image: <FirefoxImg />,
-      title: "Add to Firefox",
-      version: "55",
-      buttonText: "Add & Install Extension"
-    },
-    {
       id: "chrome",
       image: <ChromeImg />,
       title: "Add to Chrome",
       version: "62",
+      buttonText: "Add & Install Extension"
+    },
+    {
+      id: "firefox",
+      image: <FirefoxImg />,
+      title: "Add to Firefox",
+      version: "55",
       buttonText: "Add & Install Extension"
     },
     {
