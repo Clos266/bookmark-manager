@@ -1,4 +1,88 @@
+/* Estilos para el menú hamburguesa (solo móvil) */
+.hamburger-menu-container {
+  position: relative;
+  display: none; /* Oculto por defecto, se mostrará solo en móvil */
+}
 
+@media (max-width: 768px) {
+  .hamburger-menu-container {
+    display: block;
+  }
+  
+  .hamburger-button {
+    background: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+  }
+  
+  .hamburger-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    color: white;
+  }
+  
+  .hamburger-button.open .hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger-button.open .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-button.open .hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .menu-content {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100%;
+    background: #2E344E;
+    opacity: 0.97;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    padding: 80px 20px 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+.social-burger {
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
+  .menu-content.show {
+    left: 0;
+  }
+  
+  .menu-content ul {
+    list-style: none;
+  }
+  
+  .menu-content li a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-top: 1px solid #eee;
+  }
+  
+}
+
+/* fin de la hambugiesa */
 /* Reset para evitar overflow */
 html, body {
   max-width: 100%;
@@ -13,20 +97,42 @@ html, body {
 }
 
 /* Header */
+/* Estilos para el header */
+.Hide{
+  display: none;
+}
 .App-header {
-  background: white;
-  min-height: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  align-items: center;
+  background: #fff;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 0.93rem;
+
+}
+
+/* Estilos para la navegación */
+.nav-links ul {
+  display: flex;          /* Hace la lista horizontal */
+  list-style: none;       /* Elimina los puntos */
+  padding-left: 0;        /* Elimina el padding por defecto */
+  gap: 1.5rem;           /* Espacio entre elementos */
+  margin: 0;             /* Elimina margenes por defecto */
+}
+
+.nav-links a {
+  text-decoration: none;
   color: #252B46;
-  border: 2px solid red;
-  margin: 1rem 0;
-  width: 100%;
-  box-sizing: border-box;
+  font-weight: bold;
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+  white-space: nowrap;
+  transition: color 0.3s ease; /* Opcional: efecto hover suave */
+}
+
+/* Opcional: efecto hover */
+.nav-links a:hover {
+  color: #5268db; /* Cambia el color al pasar el mouse */
 }
 
 /* Navigation */
