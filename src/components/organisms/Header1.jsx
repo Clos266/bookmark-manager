@@ -6,8 +6,8 @@ function Header() {
   return (
     <header className="App-header">
       <Logo />
-      <div className="Hide"><NavLinks />
-      <Button>LOGIN</Button></div>
+      <div className="Hide"><NavLinks /></div>
+      <div className="Hide"><Button className="red-button">LOGIN</Button></div>
       <HamburgerMenu />
     </header>
   );

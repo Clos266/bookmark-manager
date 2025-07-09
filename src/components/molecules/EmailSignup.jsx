@@ -1,3 +1,5 @@
+import Button from "../atoms/Button1";
+
 function EmailSignup() {
   return (
     <div className="email-signup">
@@ -9,7 +11,8 @@ function EmailSignup() {
           className="email-input" 
           placeholder="Enter your email" 
         />
-        <button className="contact-button">Contact Us</button>
+        <Button className="red-button">Contact Us</Button>
+        
       </div>
     </div>
   );

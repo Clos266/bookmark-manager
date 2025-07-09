@@ -66,11 +66,6 @@ const HamburgerMenu = () => {
           </div>
         </div>)}
       </nav>
-
-      {/* Overlay para cerrar el menú al hacer clic fuera */}
-      {isOpen && (
-        <div className="menu-overlay" onClick={toggleMenu}></div>
-      )}
     </div>
   );
 };
