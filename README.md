@@ -1,3 +1,5 @@
+![Preview](https://i.ibb.co/Y71f74jH/129shots-so.png)
+
 # 📚 Bookmark Manager
 
 Este es mi primer proyecto en React, desarrollado como parte del bootcamp de IT Academy.  
