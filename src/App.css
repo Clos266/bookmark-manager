@@ -84,6 +84,7 @@
 }
 
 /* fin de la hambugiesa */
+
 /* Reset para evitar overflow */
 html, body {
   max-width: 100%;
