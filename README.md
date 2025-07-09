@@ -36,10 +36,14 @@ Clona el repositorio:
 
 ```bash
 git clone https://github.com/Clos266/bookmark-manager.git
+```
 
+```
 npm install
+```
 
+```
 npm start
+```
 
 ¡Gracias por visitar este proyecto! Cualquier feedback es bienvenido 🙌
-```
