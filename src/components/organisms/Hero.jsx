@@ -1,4 +1,4 @@
-import Button from "../atoms/Button1";
+import Button from "../atoms/ButtonWeb";
 
 import { images } from "../../assets/images";
 import StyledImage from "../atoms/ImagesStyled";

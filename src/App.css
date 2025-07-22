@@ -2,6 +2,7 @@
 .hamburger-menu-container {
   position: relative;
   display: none; 
+  
 }
 
 @media (max-width: 768px) {
@@ -170,16 +171,9 @@ html, body {
   color: #5368df;
   border-color: #5368df;
 }
-.img2 {
+.ImagesStyled {
   max-width: 50%;
 }
-.img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-
 
 .hero {
   margin: 0 auto;
@@ -203,10 +197,6 @@ html, body {
   justify-content: center;
 }
 
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-}
 
 .hero-buttons {
   display: flex;
@@ -247,19 +237,6 @@ html, body {
   max-width: 500px;
   margin: 0 auto 3rem;
 }
-
-.features-header h2 {
-  font-size: 1.87rem;
-  color: #252b46;
-  margin-bottom: 1rem;
-}
-
-.features-header p {
-  font-size: 0.85rem;
-  color: rgba(37, 43, 70, 0.714);
-  line-height: 1.5;
-}
-
 
 .tabs-container {
   max-width: 800px;
@@ -333,13 +310,7 @@ html, body {
   margin-bottom: 1rem;
 }
 
-.tab-text p {
-  font-size: 0.85rem;
-  color: rgba(37, 43, 70, 0.714);
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-  
-}
+
 
 .simple-button {
   font-size: 0.8rem;
@@ -366,19 +337,6 @@ html, body {
   margin: 7rem auto 0;
 }
 
-.download h2 {
-  font-size: 1.87rem;
-  color: #252b46;
-  margin-bottom: 1rem;
-}
-
-.download p {
-  font-size: 0.87rem;
-  color: rgba(37, 43, 70, 0.714);
-  max-width: 500px;
-  margin: 0 auto 3rem;
-}
-
 .download-section {
   padding: 2rem 2rem;
   text-align: center;
@@ -391,11 +349,6 @@ html, body {
   margin: 0 auto 3rem;
 }
 
-.download-header h2 {
-  font-size: 1.87rem;
-  color: #252b46;
-  margin-bottom: 1rem;
-}
 
 .download-header p {
   font-size: 0.87rem;

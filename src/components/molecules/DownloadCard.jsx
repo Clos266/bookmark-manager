@@ -1,4 +1,4 @@
-import Button from "../atoms/Button1";
+import Button from "../atoms/ButtonWeb";
 
 function DownloadCard({ image, title, version, buttonText, cardId }) {
   return (

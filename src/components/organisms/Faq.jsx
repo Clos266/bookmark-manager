@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Button from "../atoms/Button1";
+import Button from "../atoms/ButtonWeb";
 
 function Faq() {
   const [openIndex, setOpenIndex] = useState(null);
