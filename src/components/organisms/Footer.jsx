@@ -1,11 +1,12 @@
-import Logo2 from "../atoms/Logo2";
 import NavFooter from "../molecules/NavFooter";
+import { images } from "../../assets/images";
+import StyledImage from "../atoms/ImagesStyled";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <Logo2 />
+        <StyledImage src={images.logo2} alt="logo footer" />
         <NavFooter />
         <div className="social-icons">
           <svg className="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">

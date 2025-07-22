@@ -1,7 +1,6 @@
-import FeaturesImg from "../atoms/Features-img";
-
+import { images } from "../../assets/images";
 import Button from "../atoms/Button1";
-// import PropTypes from 'prop-types';
+import StyledImage from "../atoms/ImagesStyled";
 
 function FeaturesCard({ 
   imageSrc, 
@@ -15,7 +14,7 @@ function FeaturesCard({
     <div className={`tabcontent ${isActive ? 'active' : ''}`}>
       <div className="tab-layout">
         <div className="tab-image">
-          <FeaturesImg src={imageSrc} alt={imageAlt} />
+          <StyledImage src={images.features} alt={imageAlt} />
         </div>
         <div className="tab-text">
           <h3>{title}</h3>
@@ -28,14 +27,5 @@ function FeaturesCard({
     </div>
   );
 }
-
-// FeaturesCard.propTypes = {
-//   imageSrc: PropTypes.string.isRequired,
-//   imageAlt: PropTypes.string,
-//   title: PropTypes.string.isRequired,
-//   description: PropTypes.string.isRequired,
-//   buttonText: PropTypes.string,
-//   isActive: PropTypes.bool
-// };
 
 export default FeaturesCard;

@@ -1,27 +1,28 @@
 import DownloadCard from "../molecules/DownloadCard";
-import FirefoxImg from "../atoms/Firefox-img";
-import ChromeImg from "../atoms/Chrome-img";
-import OperaImg from "../atoms/Opera-img";
+
+import { images } from "../../assets/images";
+
+import StyledImage from "../atoms/ImagesStyled";
 
 function Download() {
   const browsers = [
     {
       id: "chrome",
-      image: <ChromeImg />,
+      image: <StyledImage src={images.chrome} alt="Chrome logo" />,
       title: "Add to Chrome",
       version: "62",
       buttonText: "Add & Install Extension"
     },
     {
       id: "firefox",
-      image: <FirefoxImg />,
+      image: <StyledImage src={images.firefox} alt="Chrome logo" />,
       title: "Add to Firefox",
       version: "55",
       buttonText: "Add & Install Extension"
     },
     {
       id: "opera",
-      image: <OperaImg />,
+      image: <StyledImage src={images.opera} alt="Chrome logo" />,
       title: "Add to Opera",
       version: "46",
       buttonText: "Add & Install Extension"

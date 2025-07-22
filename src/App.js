@@ -1,5 +1,3 @@
-// src/App.js
-
 import Header from "./components/organisms/Header1";
 import Hero from "./components/organisms/Hero";
 import Features from "./components/organisms/Features";
@@ -20,7 +18,6 @@ function App() {
       <Faq />
       <Prefooter />
       <Footer />
-      {/* Aquí pots afegir Hero, Features, Footer... */}
     </div>
   );
 }

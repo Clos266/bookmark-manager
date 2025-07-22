@@ -1,24 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import Button from "../atoms/Button1";
-import Logo2 from "../atoms/Logo2";
+import { images } from "../../assets/images";
+import StyledImage from "../atoms/ImagesStyled";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Verificar el tamaño de la pantalla al cargar y al redimensionar
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768); // 768px es el breakpoint común para móvil
+      setIsMobile(window.innerWidth <= 768); 
     };
 
-    // Verificar al montar el componente
     checkScreenSize();
 
-    // Escuchar cambios de tamaño
     window.addEventListener('resize', checkScreenSize);
 
-    // Limpiar el event listener al desmontar
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
@@ -26,14 +23,12 @@ const HamburgerMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Solo renderizar en móviles
   if (!isMobile) {
     return null;
   }
 
   return (
     <div className="hamburger-menu-container">
-      {/* Botón hamburguesa */}
       <button 
         className={`hamburger-button ${isOpen ? 'open' : ''}`} 
         onClick={toggleMenu}
@@ -45,9 +40,9 @@ const HamburgerMenu = () => {
         <span className="hamburger-line"></span>
       </button>
 
-      {/* Menú desplegable */}
+
       <nav className={`menu-content ${isOpen ? 'show' : ''}`}>
-        <Logo2 />
+        <StyledImage src={images.logo2} alt="logo footer" />
         <ul>
           <li><a href="/" onClick={toggleMenu}>FEATURES</a></li>
           <li><a href="/pricing" onClick={toggleMenu}>PRICING</a></li>
