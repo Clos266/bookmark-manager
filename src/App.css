@@ -153,6 +153,18 @@ html, body {
   white-space: nowrap;
 }
 
+.Button.inverted {
+  background: white;
+  color: #5368df;
+  border-color: #5368df;
+  box-shadow: none;
+}
+
+.Button.inverted:hover {
+  background: #5368df;
+  color: white;
+  border-color: #5368df;
+}
 
 .Button {
    font-size: 0.8rem;
@@ -178,25 +190,35 @@ html, body {
 .hero {
   margin: 0 auto;
   max-width: 1200px;
+  margin-top: 5rem;
+  
 }
 
 .hero-container {
   display: flex;
   align-items: center;
+  justify-content: space-between; 
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .hero-content {
-  flex: 1;
+  flex: 0.8; /* o menos */
   padding: 0 1rem;
+  min-width: 250px; /* opcional */
+  max-width: 500px; /* controla qué tan ancho puede llegar */
 }
 
 .hero-image {
-  flex: 1;
+  flex: 1; 
   display: flex;
-  justify-content: center;
+   
 }
-
+.hero-image img {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
 
 .hero-buttons {
   display: flex;
